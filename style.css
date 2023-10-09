@@ -1,0 +1,187 @@
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.navbar-nav .nav-link {
+            color: lightblue !important; /* Using !important to ensure the style is not overridden by Bootstrap styles */
+        }
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 400px;
+    margin-top: 56px;
+    height: calc(100vh - 56px);
+    background-image: url('assests/codingBackgroundImage.jpeg');
+    
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4); /* Adjust color and opacity as needed */
+    z-index: 0;
+}
+
+.hero-content {
+    text-align: center;
+    color: #FFFFFF; /* Adjust the color as needed to be readable against your background */
+    z-index: 1;
+}
+
+
+.hero-headshot {
+    width: 20%;
+    min-width: 300px;
+    height: auto;
+    min-height: 300px;
+    border: 3px solid #FFFFFF; /* Adjust the color as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+}
+
+
+
+.hero-content h1,
+.hero-content .tagline {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adjust color and blur radius as needed */
+}
+
+.tagline {
+    font-size: 1.25em;
+    margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+    .hero-headshot {
+        width: 120px;
+        height: 120px;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+}
+
+#about-me-section{
+  background-color: lightblue;
+  color: black;
+}
+
+#mission-section{
+  background-color: black;
+  color: lightblue;
+  
+  
+  margin-bottom: -56px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  
+}
+
+#skills-section{
+  background-color: lightblue;
+  font: black;
+  margin-bottom: -56px;
+  /*
+  margin-top: 50px;
+
+  
+  padding-top: -5px;
+  padding-bottom: 25px;
+  */
+}
+
+#contact-section{
+  background-color: lightblue;
+  color: #3355FF;
+}
+
+#carousel-section{
+  background-color: black;
+  color: lightblue;
+}
+
+.carousel-inner img {
+  height: 50vw; /* Adjust as necessary */
+  object-fit: cover;
+  width: 100%;
+  border: 5px solid #ddd;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+  color: lightblue; /* White text */
+}
+
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2300008B' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2300008B' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+
+
+@media (min-width: 992px) {
+    i {
+      font-size: 3rem !important; /* Even Larger for Large Screens */
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    i {
+      font-size: 3.5rem !important; /* Even Larger for Medium Screens */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    i {
+      font-size: 4rem !important; /* Even Larger for Small Screens */
+    }
+  }
+
+.contact-icon:hover {
+        color: red !important; /* You can change the color to whatever you prefer */
+    }
+a{
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .carousel-caption {
+    font-size: 0.75rem;
+    padding: 5px;
+  }
+}
+
+footer{
+  /*
+  padding-top: 6px;
+  padding-bottom: 6px;
+  */
+  padding: 15px;
+  font-size: .8em;
+  background-color: black;
+  color: white;
+}
+
+
+

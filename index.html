@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <meta name="milestone" content="Portfolio">
+    <!-- TODO: Replace this with your title -->
+    <title>Dalton's Portfolio Project</title>  
+    <!-- 
+			TODO: Add Bootstrap CSS link tag from: 
+      https://getbootstrap.com/docs/5.2/getting-started/introduction/
+		-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- 
+			TODO: Add Bootstrap Icons link tag from: 
+			https://icons.getbootstrap.com/
+			(Remember, the CDN link is towards the bottom of the page!)
+		-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- font-awesome-link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom styles (these can extend the default Bootstrap styles) -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <body id="top">
+    <!-- TODO: Paste Navbar code and customize links -->
+    <section id="hero-section">
+      <nav class="navbar bg-primary navbar-expand-sm bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="nav-link" aria-current="page" href= "#hero-section">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="lightblue" class="bi bi-house" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+            </svg>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <a class="nav-link" aria-current="page" href= "#hero-section">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="lightblue" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                </svg>
+                </a>
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#about-me-section">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#mission-section">Misson</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#skills-section">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#contact-section">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    
+    <!-- Hero section -->
+  	<div class="hero-section">
+        <div class="hero-content">
+            <img class="hero-headshot" src="assests/portfolioImg.jpg" alt="Headshot Image">
+            <h1>Dalton Berg</h1>
+            <p class="tagline">Student | Software Engineering</p>
+        </div>
+    </div>
+
+    <section id="about-me-section">
+      <div class="container pt-3 pb-3"> 
+        <div class="row"> 
+          <div class="col-12 text-center mb-4">
+            <h2>About Me</h2> <!-- Centered Heading -->
+          </div>
+
+          <div class="col-md-6 mt-md-0 pt-0 d-flex align-items-center">
+            <p class="align-middle">
+              "I am currently a junior at Arizona State University, majoring in Software Engineering. Born and raised in Arizona, I have interests in a range of areas within the realm of computing, including Artificial Intelligence, Data Analytics, and Web Development. Always eager to explore and delve deeper, I am open to learning and adopting new technologies and frameworks to augment my skills and understanding."  
+            </p> 
+          </div>
+          <div class="col-md-6">
+            <img src="assests/MissionSection.jpeg" alt="Mission Image" class="img-fluid"> 
+          </div>
+        </div>
+      </div>
+  	</section>
+    
+    
+  	<!-- Mission/Meet-me section -->
+    <section id="mission-section">
+      <div class="container "> <!-- Container for the mission section -->
+        <div class="row"> <!-- Row for the mission section -->
+          <div class="col-12 text-center mb-4">
+            <h2>Mission</h2> <!-- Centered Heading -->
+          </div>
+          
+          <div class="col-md-6">
+            <img src="assests/MissionSection.jpeg" alt="Mission Image" class="img-fluid"> 
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-center">
+            <p class="align-middle">
+              "I am steadfastly committed to a journey of continual learning and self-improvement, with the aim to enhance my proficiency in software engineering and development. My mission is to acquire new skills and refine existing ones, ensuring that I am well-equipped to adapt and excel in the ever-evolving technological landscape. I seek to prepare myself diligently for future roles, pursuing excellence in my craft, and contributing effectively to the industry. It is my ambition to be not just a participant in the field of technology but to be a thoughtful and innovative contributor, constantly pushing boundaries and striving for the highest standards of professional excellence."  
+            </p> 
+          </div>
+        </div>
+      </div>
+  	</section>
+  
+    <!-- Skills section -->
+    <section id="skills-section">
+      <div class="container mt-5 pt-3">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2>Skills</h2>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="text-center">
+              <i class="fab fa-java"></i> <!-- Java Icon -->
+              <p>Java</p>
+              <p class="text-muted">Developing robust applications with one of the most versatile languages.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="text-center">
+              <i class="fab fa-cuttlefish"></i> <!-- C++ Icon -->
+              <p>C++</p>
+              <p class="text-muted">Creating efficient, performance-optimized applications with C++.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="text-center">
+              <i class="fab fa-css3-alt"></i> <!-- CSS Icon -->
+              <p>CSS</p>
+              <p class="text-muted">Designing sleek and stylish layouts with advanced CSS techniques.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="text-center">
+              <i class="fab fa-python"></i> <!-- Python Icon -->
+              <p>Python</p>
+              <p class="text-muted">Developing versatile applications and scripts with Python.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="text-center">
+              <i class="fab fa-html5"></i> <!-- HTML Icon -->
+              <p>HTML</p>
+              <p class="text-muted">Structuring the web's content using modern semantic HTML.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="text-center">
+              <i class="fab fa-bootstrap"></i> <!-- Bootstrap Icon -->
+              <p>Bootstrap</p>
+              <p class="text-muted">Building responsive and mobile-first projects on the web with the world's most popular front-end component library.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="text-center">
+              <i class="fab fa-js-square"></i> <!-- JavaScript Icon -->
+              <p>JavaScript</p>
+              <p class="text-muted">Creating interactive and dynamic user experiences with JavaScript.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="text-center">
+              <i class="fas fa-laptop-code"></i> <!-- JavaFX Icon (FontAwesome does not have a specific icon for JavaFX) -->
+              <p>JavaFX</p>
+              <p class="text-muted">Developing rich, client-side applications with JavaFX.  </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 offset-lg-2">
+            <div class="text-center">
+                <i class="fas fa-microchip"></i> <!-- Generic icon for MIPS -->
+                <p>MIPS</p>
+                <p class="text-muted">Developing and understanding assembly language with MIPS.</p>
+            </div>
+          </div>
+          
+          <!-- Figma Skill -->
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="text-center">
+                  <i class="fab fa-figma"></i> <!-- Figma Icon -->
+                  <p>Figma</p>
+                  <p class="text-muted">Designing and prototyping user interfaces with Figma.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+  	</section>
+
+    <section id="carousel-section">
+      <div class="container mt-5 pt-3 pb-5">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>My Operating Systems</h2>
+          </div>
+          <div class="col-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <!-- Marie Curie -->
+                <div class="carousel-item active">
+                  <img src="assests/Linux.jpeg" class="d-block w-100" alt="Linux">
+                  <div class="carousel-caption d-sm-block">
+                    <h5>Linux</h5>
+                    <p>An open-source, Unix-like operating system.</p>
+                  </div>
+                </div>
+                <!-- Albert Einstein -->
+                <div class="carousel-item">
+                  <img src="assests/macos.jpeg" class="d-block w-100" alt="macos">
+                  <div class="carousel-caption d-sm-block">
+                    <h5>macOS</h5>
+                    <p>The primary operating system for Apple's Mac computers.</p>
+                  </div>
+                </div>
+                <!-- Ada Lovelace -->
+                <div class="carousel-item">
+                  <img src="assests/windows.jpeg" class="d-block w-100" alt="Windows">
+                  <div class="carousel-caption d-sm-block">
+                    <h5>Windows</h5>
+                    <p>A series of operating systems developed by Microsoft.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- Contact Section -->
+    <section id="contact-section">
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-12 text-center mb-4">
+            <h2>Contact</h2>
+          </div>
+          
+          <!-- GitHub Icon -->
+          <div class="col-md-3 col-12 text-center mb-3">
+            <a href="https://github.com/daltonBergSoftware" class="contact-icon">
+              <i class="fab fa-github fa-2x"></i>
+              <h2>GitHub</h2>
+            </a>
+          </div>
+          
+          <!-- LinkedIn Icon -->
+          <div class="col-md-3 col-12 text-center mb-3">
+            <a href="https://www.linkedin.com/in/yourusername/" class="contact-icon">
+              <i class="fab fa-linkedin fa-2x"></i>
+              <h2>linkedin</h2>
+            </a>
+          </div>
+          
+          <!-- Email Icon -->
+          <div class="col-md-3 col-12 text-center mb-3">
+            <a href="mailto:daltonberg87@gmail.com" class="contact-icon">
+              <i class="fas fa-envelope fa-2x"></i>
+              <h2>Email</h2>
+            </a>
+          </div>
+          
+          <!-- Phone Icon -->
+          <div class="col-md-3 col-12 text-center mb-3">
+            <a href="sms:602-618-3297" class="contact-icon">
+              <i class="fas fa-phone-alt fa-2x"></i>
+              <h2>Text</h2>
+            </a>
+          </div>
+
+          <div class="col-12 text-center mb-3">
+            <a href="https://docs..com/document/d/1p5CRLHfcztSfQtB-C1KuaIOtNYUpFZef/edit?usp=sharing&ouid=113072996624668415413&rtpof=true&sd=true" class="contact-icon" target="_blank">
+              <i class="fas fa-file fa-2x"></i>
+              <h2>Resume</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- Footer section -->
+    <section id="footer-section">
+      <footer class="text-center">
+          &copy; Dalton Berg 2023
+      </footer>
+    </section>
+  
+    <!-- 
+  		TODO: Paste Bootstrap JavaScript script tag from:
+  		https://getbootstrap.com/docs/5.2/getting-started/introduction/
+  	-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
